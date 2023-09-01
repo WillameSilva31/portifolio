@@ -5,7 +5,7 @@
 }
 
 .Banner_Container {
-    width: 100%;
+    width: 98%;
     height: 1000px;
     background: rgb(149,73,194);
     background: linear-gradient(180deg, rgba(149,73,194,1) 11%, rgba(27,57,181,1) 75%, rgba(79,195,252,1) 100%);
@@ -56,7 +56,7 @@
 }
 
 .Dev {
-    font-size: 250px;
+    font-size: 230px;
     font-weight: 900;
     font-family: 'Inter', sans-serif;
     display: flex;
