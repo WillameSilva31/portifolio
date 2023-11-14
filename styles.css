@@ -118,7 +118,7 @@
 .card {
     margin-top: 50px;
     width: 35%;
-    height: 600px;
+    height: 700px;
     border-radius: 50px;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
     background-color: azure;
@@ -137,7 +137,7 @@
 
 .project {
     width: 90%;
-    height: 17%;
+    height: 20%;
     border-block-start: 1px solid rgba(5, 5, 5, 0.06);
     margin: 0 auto;
 }
