@@ -245,11 +245,12 @@
 }
 
 .stacks_list {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 50px;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    row-gap: 50px;
 }
 
 .stack {
@@ -261,6 +262,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-display: fi;
 }
 
 .stack:hover {
@@ -279,6 +281,26 @@
 }
 
 .mysql {
+    width: 8vw;
+    height: 8vw;
+}
+
+.java {
+    width: 8vw;
+    height: 8vw;
+}
+
+.springboot {
+    width: 8vw;
+    height: 8vw;
+}
+
+.docker {
+    width: 8vw;
+    height: 8vw;
+}
+
+.postgres {
     width: 8vw;
     height: 8vw;
 }
