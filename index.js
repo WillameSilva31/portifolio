@@ -1,19 +1,30 @@
-document.addEventListener('DOMContentLoaded', function () {
-   changeLanguage('pt');
-});
-function changeLanguage(lang) { 
+function changeLanguage(lang) {
    const elements = document.querySelectorAll('[data-pt], [data-en]');
    elements.forEach(element => {
        if (lang === 'pt' && element.dataset.pt) {
-           element.textContent = element.dataset.pt;
+           if (element.tagName === 'A') {
+               element.href = element.dataset.pt;
+           } else {
+               element.textContent = element.dataset.pt;
+           }
        } else if (lang === 'en' && element.dataset.en) {
-           element.textContent = element.dataset.en; 
+           if (element.tagName === 'A') {
+               element.href = element.dataset.en;
+           } else {
+               element.textContent = element.dataset.en;
+           }
        }
    });
 }
+
 document.getElementById('btn-portuguese').addEventListener('click', () => {
-   changeLanguage('pt'); 
+   changeLanguage('pt');
 });
+
 document.getElementById('btn-english').addEventListener('click', () => {
-   changeLanguage('en'); 
+   changeLanguage('en');
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+   changeLanguage('pt');
 });
